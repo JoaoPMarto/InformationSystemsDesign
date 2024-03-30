@@ -1,0 +1,15 @@
+<div class="register">
+    <form>
+        <div>
+            <input type="text" id="userName"  name="userName" placeholder="userName" #userName>
+            
+        </div>
+        <div>
+            <input type="text" id="password" name="password" placeholder="password" #password>
+        </div>
+        <div>
+            <input type="submit" value="register" (click)="register(userName.value, password.value)">
+            <p>Password tem de ter pelo menos: 1 letra maiúscula, 1 letra minúscula e 1 número</p>
+        </div>
+      </form>
+</div>

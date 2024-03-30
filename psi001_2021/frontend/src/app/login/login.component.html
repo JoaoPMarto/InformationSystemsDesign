@@ -1,0 +1,15 @@
+<div class="login">
+    <form>
+        <div>
+            <input type="text" id="userName"  name="userName" placeholder="userName" #userName>
+            
+        </div>
+        <div>
+            <input type="text" id="password" name="password" placeholder="password" #password>
+        </div>
+        <div>
+            <input type="submit" value="login" (click)="login(userName.value, password.value)">
+            <a href="/register">Registar</a>
+        </div>
+      </form>
+</div>
